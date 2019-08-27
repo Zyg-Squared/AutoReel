@@ -52,14 +52,13 @@ Installation of AutoReel takes a few steps and dependencies.
 
     pip3 install -r ./requirements.txt
 
-    echo "First Name,Last Name,Position,Email\nBob,Smith,,bob.smith@bobswebsite.com" > 00001-
-    example.csv
+    echo -e "First Name,Last Name,Position,Email\nBob,Smith,,bob.smith@bobswebsite.com" > ./campaigns/00001-example.csv
     
     # nano ./campaigns/00001-example.json or nano ./campaigns/00001-example.json
     # Modify line 7 "launch_date": "5 2 27 8 *" to be "launch_date": "min hour day month *"
     # Example: If you want the launch date to be December 31st at 3:42pm you would use "launch_date": "42 15 31 12 *"
 
-    python3 python3 ./scripts/phish_setup.py --bucketname exampleBucketName --domainname exampleDomainName.com  --keyid AKIA__KEYID_EXAMPLE  --key 0101010101010101010101010 --region us-west-2 --accountid 016298199999
+    python3 ./scripts/phish_setup.py --bucketname exampleBucketName --domainname exampleDomainName.com  --keyid AKIA__KEYID_EXAMPLE  --key 0101010101010101010101010 --region us-west-2 --accountid 016298199999
 
     python3 ./scripts/phish_cast.py  --bucketname exampleBucketName --campaignid 00001-example --action create --keyid AKIA__KEYID_EXAMPLE  --key 0101010101010101010101010 --region us-west-2 --accountid 016298199999
 
