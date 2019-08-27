@@ -112,7 +112,7 @@ def lambda_handler(event, context):
     
     # Generate SMTP Password
     smtp_password = ''.join(secrets.choice(string.ascii_uppercase + string.digits) for _ in range(25))
-    admin_password = "ETC4d2HDsoyR425uHh"
+    admin_password = "you should probably change this"
     # Create AWS Clients
     route53 = boto3.client('route53')
     lightsail = boto3.client('lightsail', region_name = region)

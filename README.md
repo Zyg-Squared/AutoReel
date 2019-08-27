@@ -17,7 +17,7 @@ AutoReel uses the following
 ### Prerequisites:
 
  - AWS Account Setup
-	 - This platform is built on AWS and is strongly coupled with it. You will need an AWS account that you  - can create resources in. 
+	 - This platform is built on AWS and is strongly coupled with it. You will need an AWS account that you can create resources in. 
 	 - https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/
 
  - AWS IAM Account with Programmatic Access Keys
@@ -54,9 +54,12 @@ Installation of AutoReel takes a few steps and dependencies.
 
     echo -e "First Name,Last Name,Position,Email\nBob,Smith,,bob.smith@bobswebsite.com" > ./campaigns/00001-example.csv
     
-    # nano ./campaigns/00001-example.json or nano ./campaigns/00001-example.json
+    # nano ./campaigns/00001-example.json or vim ./campaigns/00001-example.json
     # Modify line 7 "launch_date": "5 2 27 8 *" to be "launch_date": "min hour day month *"
     # Example: If you want the launch date to be December 31st at 3:42pm you would use "launch_date": "42 15 31 12 *"
+
+    # nano ./scripts/phish_campaign_create.py or vim ./scripts/phish_campaign_create.py
+    # Modify line 188-194 to include the Let's Encrypt Certs, These are needed for API Access for automated campaign creation, configuration, and reporting
 
     python3 ./scripts/phish_setup.py --bucketname exampleBucketName --domainname exampleDomainName.com  --keyid AKIA__KEYID_EXAMPLE  --key 0101010101010101010101010 --region us-west-2 --accountid 016298199999
 
@@ -68,7 +71,7 @@ Installation of AutoReel takes a few steps and dependencies.
 Working on it....
 
 
-### Future Work - ( that probably wont be done )
+### Future Work - ( that probably will not be done )
  - Campaign types: 
 	 - Drive By
 	 - Credential Harvesting
