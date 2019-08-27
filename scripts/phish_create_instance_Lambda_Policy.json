@@ -1,0 +1,30 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "iam:AttachUserPolicy",
+                "iam:CreateUser",
+                "iam:CreateAccessKey",
+                "iam:CreatePolicy",
+                "lightsail:AttachStaticIp",
+                "lightsail:OpenInstancePublicPorts",
+                "lightsail:AllocateStaticIp",
+                "lightsail:GetStaticIp",
+                "lightsail:CreateInstances",
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents",
+                "route53:ChangeResourceRecordSets",
+                "route53:ListHostedZones",
+                "sqs:ReceiveMessage",
+                "sqs:GetQueueAttributes",
+                "sqs:DeleteMessage"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

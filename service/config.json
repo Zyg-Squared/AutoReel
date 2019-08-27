@@ -1,0 +1,18 @@
+{
+"admin_server": {
+  "listen_url": "0.0.0.0:3333",
+  "use_tls": true,
+  "cert_path": "/opt/gophish/fullchain.pem",
+  "key_path": "/opt/gophish/privatekey.key"
+  },
+"phish_server": {
+  "listen_url": "0.0.0.0:443",
+  "use_tls": true,
+  "cert_path": "/opt/gophish/fullchain.pem",
+  "key_path": "/opt/gophish/privatekey.key"
+  },
+"db_name": "sqlite3",
+"db_path": "gophish.db",
+"migrations_prefix": "db/db_",
+"contact_address": ""
+}

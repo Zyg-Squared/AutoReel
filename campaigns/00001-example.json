@@ -1,0 +1,8 @@
+{
+  "campaignid": 1,
+  "template": "example",
+  "bucketname": "name-of-the-bucket-you-created",
+  "region": "us-east-1",
+  "targetgroup": "00001",
+  "launch_date": "0 1 27 8 *"
+}

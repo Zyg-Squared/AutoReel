@@ -1,0 +1,12 @@
+{
+"template": "example",
+"domainprefix": "www-example-com-login",
+"domain": "the-domain-you-bought.com",
+"subject_name": "Office File Error",
+"smtp_username": "mike",
+"smtp_display_name": "Michael Smith michael@example.com",
+"smtp_address": "michael@example.com",
+"redirect_url": "https://login.example.com",
+"phishing_url_text": "https://login.example.com/about/en-us/signin/",
+"landing_page_url": "https://www-example-com-login.the-domain-you-bought.com/"
+}

@@ -1,0 +1,36 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Delete",
+            "Effect": "Allow",
+            "Action": [
+                "sqs:DeleteMessage",
+                "sqs:ReceiveMessage",
+                "sqs:GetQueueAttributes",
+                "route53:ChangeResourceRecordSets",
+                "route53:ListHostedZones",
+                "logs:CreateLogGroup",
+                "logs:DescribeLogStreams",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents",
+                "logs:CreateLogGroup",
+                "iam:DeleteAccessKey",
+                "iam:DeleteUserPolicy",
+                "iam:DeletePolicy",
+                "iam:DeleteUser",
+                "iam:ListAccessKeys",
+                "iam:DetachUserPolicy",
+                "lightsail:ReleaseStaticIp",
+                "lightsail:DetachStaticIp",
+                "lightsail:GetStaticIp",
+                "lightsail:DeleteInstance",
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:DeleteObject",
+                "s3:DeleteBucket"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

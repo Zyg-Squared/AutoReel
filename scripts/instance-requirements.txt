@@ -1,0 +1,11 @@
+boto3
+python-secrets
+requests 
+configparser
+simplejson 
+python-dateutil 
+gophish
+python-docx
+user-agents
+click
+xlsxwriter
